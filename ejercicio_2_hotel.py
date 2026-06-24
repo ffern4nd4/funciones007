@@ -25,7 +25,6 @@ def agregar_reserva(lista_r):
     if not correcto:
         print("El nombre no puede estar vacio")
         return
-    
     numero_habitacion = input("Ingrese  el numero de habitacion a reservar: ")
     correcto = validar_habitacion(numero_habitacion)
     if not correcto:
@@ -44,7 +43,7 @@ def agregar_reserva(lista_r):
         "noches" : int(cant_noches),
         "confirmada" : False
     }
-    lista_r.apped(reserva)
+    lista_r.append(reserva)
     print("Reserva agregada correctamente")
 
 def buscar_reserva(lista_r, huesped):
